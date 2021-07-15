@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-container{
+    display:flex;
+    background-color: gray;
+    /*
+    flex-direction: row;
+    flex-wrap: wrap;
+    */
+    flex-flow: row wrap;
+    /* align-content: space-between; */
+
+    /* width: 100vh; */
+    height: 150vh;
+    /* justify-content: space-around; */
+
+}
+
+.flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4, .flex-item-5{
+    background-color: greenyellow;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.flex-item-1{
+    flex-grow: 1;
+}
+
+.flex-item-3{
+    flex-grow: 1;
+}
+
+.flex-item-2{
+    align-self: center;
+}
