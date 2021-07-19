@@ -1,0 +1,93 @@
+/* Page Layout */
+.container {
+    max-width: 900px;
+    background-color: #fff;
+    margin: 100px auto;
+    /* margin-top: 100px; */
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color: #ef5350;
+    padding: 20px 0;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+}
+
+header nav li{
+    margin-right: 15px;
+}
+
+header button {
+    background-color: #ef5350;
+    border: none;
+    padding: 8px 25px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Main */
+.content-and-sidebar {
+    display: flex;
+}
+
+.content {
+    text-align: center;
+    margin-right: 60px;
+    /* background-color: lightgray; */
+    flex: 3;
+}
+
+.content h2{
+    font-size: 32px;
+    margin-bottom: 55px;
+}
+
+.content p {
+    margin-bottom: 60px;
+}
+
+.content img {
+    width: 100%;
+}
+
+/* Side bar */
+.sidebar {
+    border:  1px solid #a2a2a2;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Fotter */
+footer {
+    color:#ef5350;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+@Media (max-width: 600px) {
+    .content-and-sidebar {
+        flex-direction: column;
+    }
+
+    .content{
+        margin-right: 0;
+    }
+}
